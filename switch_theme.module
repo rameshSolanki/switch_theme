@@ -1,0 +1,24 @@
+<?php
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+function switch_theme_page_attachments(array &$attachments) {
+$attachments['#attached']['library'][] = 'switch_theme/switch_theme';
+}
+
+function switch_theme_theme($existing, $type, $theme, $path){
+   return [
+    'switch_theme_block'     => [
+      'variables' => [
+        // define defaults for any variables you want in the twig file
+        'attributes' => [
+           'class' => ['switch_theme'],
+         ], //etc
+      ],
+    ],
+  ];
+
+}
+
+?>

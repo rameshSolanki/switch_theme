@@ -1,0 +1,6 @@
+switch_theme.switch_theme_form:
+  title: 'Switch Theme'
+  route_name: switch_theme.switch_theme_form
+  description: 'Custom Theme Switcher Setting'
+  parent: system.admin_config_system
+  weight: 99

@@ -1,0 +1,9 @@
+switch_theme.switch_theme_form:
+  path: '/admin/config/switch_theme/switch_theme'
+  defaults:
+    _form: '\Drupal\switch_theme\Form\SwitchThemeForm'
+    _title: 'Switch Theme'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE    

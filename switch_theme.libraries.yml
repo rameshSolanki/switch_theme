@@ -1,0 +1,15 @@
+switch_theme:
+  version: 1.x
+  css:
+    theme:
+      css/switch_theme.css: {}
+      https://use.fontawesome.com/releases/v5.7.0/css/all.css: { type: external, minified: true }
+  js:
+    js/switch_theme.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.form
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
